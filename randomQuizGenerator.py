@@ -28,8 +28,8 @@ capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
             'Charleston', 'Wisconsin': 'Madison', 'Wyoming': 'Cheyenne'}
 #Generate 5 quiz files.
 for quizNum in range(5):
-    quizFile = open('./quizzes/capitalsquiz%s.txt' % (quizNum + 1), 'w')
-    answerKeyFile = open('.answers/capitalsquiz_answers%s.txt' % (quizNum + 1), 'w')
+    quizFile = open('./quizzes/capitalsquiz%s.txt' % (quizNum + 1),'w')
+    answerKeyFile = open('./answers/capitalsquiz_answers%s.txt' % (quizNum + 1),'w')
     
     quizFile.write('Name:\n\nDate:\n\nPeriod:\n\n')
     quizFile.write((' ' * 20) + 'State Capitals Quiz (Form %s)' % (quizNum + 1))
@@ -54,7 +54,7 @@ quizFile.write('%s. What is the capital of %s?\n' % (questionNum + 1,states[ques
 
 for i in range(4):
     quizFile.write('%s. %s\n' % ('ABCD'[i], answerOptions[i]))
-quizFile.write('\n')
+    quizFile.write('\n')
 
            # Write the answer key to a file.
 answerKeyFile.write('%s. %s\n' % (questionNum + 1, 'ABCD'[answerOptions.index(correctAnswer)]))
