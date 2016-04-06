@@ -4,8 +4,8 @@
 
 import random, os
 #Create folders \quizzes and \answers
-os.makedirs(os.path.join('./answers'), exist_ok=True)
-os.makedirs(os.path.join('./quizzes'), exist_ok=True)
+os.makedirs(os.path.join('answer'), exist_ok=True)
+os.makedirs(os.path.join('quizzes'), exist_ok=True)
 
 
 # The quiz data. Keys are states and values are their capitals.
@@ -28,8 +28,8 @@ capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
             'Charleston', 'Wisconsin': 'Madison', 'Wyoming': 'Cheyenne'}
 #Generate 5 quiz files.
 for quizNum in range(5):
-    quizFile = open(os.path.join('./quizzes/capitalsquiz%s.txt' % (quizNum + 1)),'w')
-    answerKeyFile = open(os.path.join('./answers/capitalsquiz_answers%s.txt' % (quizNum + 1)),'w')
+    quizFile = open(os.path.join('quizzes/capitalsquiz%s.txt' % (quizNum + 1)),'w')
+    answerKeyFile = open(os.path.join('answers/capitalsquiz_answers%s.txt'% (quizNum + 1)),'w')
     
     quizFile.write('Name:\n\nDate:\n\nPeriod:\n\n')
     quizFile.write((' ' * 20) + 'State Capitals Quiz (Form %s)' % (quizNum + 1))
