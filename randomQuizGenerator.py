@@ -4,8 +4,8 @@
 
 import random, os
 #Create folders \quizzes and \answers
-os.makedirs(os.path.join('answer'), exist_ok=True)
-os.makedirs(os.path.join('quizzes'), exist_ok=True)
+os.makedirs('answer')
+os.makedirs('quizzes')
 
 
 # The quiz data. Keys are states and values are their capitals.
