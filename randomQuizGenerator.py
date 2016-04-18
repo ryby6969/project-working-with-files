@@ -28,15 +28,15 @@ capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
             'Charleston', 'Wisconsin': 'Madison', 'Wyoming': 'Cheyenne'}
 #Generate 5 quiz files.
 for quizNum in range(5):
-        quizFile = open(os.path.join('quizzes', 'capitalsquiz%s.txt') % (quizNum + 1),'w')
-        answerKeyFile = open(os.path.join('answers', 'capitalsquiz_answers%s.txt')% (quizNum + 1),'w')
+    quizFile = open(os.path.join('quizzes', 'capitalsquiz%s.txt') % (quizNum + 1),'w')
+    answerKeyFile = open(os.path.join('answers', 'capitalsquiz_answers%s.txt')% (quizNum + 1),'w')
     
-        quizFile.write('Name:\n\nDate:\n\nPeriod:\n\n')
-        quizFile.write((' ' * 20) + 'State Capitals Quiz (Form %s)' % (quizNum + 1))
-        quizFile.write('\n\n')
+    quizFile.write('Name:\n\nDate:\n\nPeriod:\n\n')
+    quizFile.write((' ' * 20) + 'State Capitals Quiz (Form %s)' % (quizNum + 1))
+    quizFile.write('\n\n')
 
-        states = list(capitals.keys())
-        random.shuffle(states)
+    states = list(capitals.keys())
+    random.shuffle(states)
 
     #Cycle through all 50 states.
     for questionNum in range(50):
