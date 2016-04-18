@@ -27,7 +27,7 @@ capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
             'Montpelier', 'Virginia': 'Richmond', 'Washington': 'Olympia', 'West Virginia': 
             'Charleston', 'Wisconsin': 'Madison', 'Wyoming': 'Cheyenne'}
 #Generate 5 quiz files.
-    for quizNum in range(5):
+for quizNum in range(5):
         quizFile = open(os.path.join('quizzes', 'capitalsquiz%s.txt') % (quizNum + 1),'w')
         answerKeyFile = open(os.path.join('answers', 'capitalsquiz_answers%s.txt')% (quizNum + 1),'w')
     
